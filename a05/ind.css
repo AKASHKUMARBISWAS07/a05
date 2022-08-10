@@ -1,0 +1,93 @@
+head,body
+{
+   padding: 5px;
+    background-image: url(sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.i1
+{
+    width: 150px;
+    margin-left: 81%;
+    animation-name: sun;
+    animation-duration: 20s;
+    
+}
+@keyframes sun{
+from{ transform: translateX(-10px);}
+to{transform: translateX(-200px);}
+}
+.i2
+{
+    width: 100%;
+    animation-name: city;
+    animation-duration: 100s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes city{
+    100%{transform: translateX(-2000px);}    
+ }
+.road
+{
+    position: relative;
+}
+
+.i3
+{
+    animation-name: road;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+    @keyframes road{
+        100%{
+            transform: translateX(-3000px);
+        }
+         
+     }
+
+.i4
+{
+  position: absolute;
+  top: 10px;
+  width: 600px;
+  margin-left: 450px;
+}
+.i5
+{
+    position: absolute;
+    width: 150px;
+    top: 10px;
+   margin-left: 59%; 
+}
+.i6
+{
+    position: absolute;
+    width: 110px;
+    top: 10px;
+    margin-top: 132px;
+    margin-left: 503px;
+    animation: rotate 1s infinite linear;
+}
+.i7
+{
+    position: absolute;
+    width: 110px;
+    top: 10px;
+    margin-top: 132px;
+    margin-left: 868px;
+    animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+    from{ 
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
